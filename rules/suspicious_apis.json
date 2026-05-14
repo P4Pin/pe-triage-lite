@@ -1,0 +1,35 @@
+{
+  "anti_debug": [
+    "IsDebuggerPresent",
+    "CheckRemoteDebuggerPresent",
+    "NtQueryInformationProcess",
+    "OutputDebugStringA"
+  ],
+  "process_execution": [
+    "CreateProcessA",
+    "CreateProcessW",
+    "WinExec",
+    "ShellExecuteA",
+    "ShellExecuteW"
+  ],
+  "memory_injection": [
+    "VirtualAlloc",
+    "VirtualAllocEx",
+    "WriteProcessMemory",
+    "CreateRemoteThread"
+  ],
+  "network": [
+    "InternetOpenA",
+    "InternetOpenW",
+    "InternetConnectA",
+    "URLDownloadToFileA",
+    "WinHttpOpen"
+  ],
+  "string_validation": [
+    "strcmp",
+    "strncmp",
+    "strlen",
+    "sprintf",
+    "scanf"
+  ]
+}
